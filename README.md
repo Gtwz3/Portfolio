@@ -1,12 +1,12 @@
 ## Porfólio de Projetos
 
-![preview](./preview.png)
+![preview](./.github/preview.png)
 
 > Imersão Dev - Alura 
 
     Projeto construído durante a Imersão Dev realizada pela Alura
 
-[🔗 Clique aqui para acessar](https://Gtwz3.github.io/Portfolio-Alura)
+[🔗 Clique aqui para acessar](https://Gtwz3.github.io/Portfolio)
 
 # Tecnologias
 
