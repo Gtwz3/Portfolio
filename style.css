@@ -1,0 +1,147 @@
+body {
+  background: linear-gradient(236.85deg, #e53935 27.26%, #f4511e 96.03%);
+  background-color: #3468a7;
+  font-family: "Roboto", sans-serif;
+  animation: fromTop 1s;
+}
+
+.container {
+  background: #f7f7f7;
+  color: #1c1c1c;
+  margin: 64px;
+  box-shadow: 6px 6px 6px #0e1d2f;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+}
+
+.perfil {
+  display: flex;
+  align-items: center;
+}
+
+.perfil-foto {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 50%;
+  margin: 32px;
+  max-width: 158px;
+  height: 160px;
+  transition: transform 0.3s;
+  animation: fromTop 1s 0.3s backwards;
+}
+
+.titulo {
+  margin-left: 16px;
+}
+
+.titulo h1 {
+  font-size: 36px;
+  font-weight: 700;
+  animation: fromTop 1s 0.6s backwards;
+}
+
+.titulo h2 {
+  font-size: 24px;
+  font-weight: 400;
+  animation: fromTop 1s 0.9s backwards;
+}
+
+.tema button {
+  align-self: flex-end;
+  font-size: 28px;
+  font-weight: 400;
+  style: none;
+  background: none;
+  border: none;
+  padding: 8px 16px;
+  transition: transform 0.5s;
+  animation: appear 1s 0.5s backwards;
+}
+
+.projetos {
+  background: linear-gradient(230.65deg, #ffca28 27.49%, #ff7043 83.19%);
+  box-shadow: 2px 2px 4px rgba(16, 16, 16, 0.42);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  font-size: 48px;
+  font-weight: 700;
+  color: #1c1c1c;
+  animation: fromBack 1s 1s backwards;
+}
+
+.projetos li {
+  font-size: 36px;
+  font-weight: 400;
+  transition: transform 0.3s;
+}
+
+.projetos a {
+  text-decoration: none;
+  color: #1c1c1c;
+}
+
+.projetos ul {
+  list-style: none;
+  animation: appear 1s 2s backwards;
+  transition: transform 1s;
+}
+
+header img:hover {
+  transform: scale(1.1);
+}
+
+.projetos li:hover {
+  transform: scale(1.05);
+}
+
+.tema button:hover {
+  transform: scale(1.2);
+}
+
+@keyframes fromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fromBack {
+  from {
+    opacity: 0;
+    transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.dark {
+  background: linear-gradient(236.85deg, #b71c1c 27.26%, #bf360c 96.03%);
+}
+
+.dark .container {
+  background-color: #333439;
+  color: #f6f6f6;
+}
